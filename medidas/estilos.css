@@ -1,0 +1,42 @@
+/* estilos.css  */
+
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+#box {
+    border: 5px solid blue;
+    /* width: calc(100%-10px); */
+    /* Tipos de unidades de medidas: cm (centimetro), in (polegadas),
+    vw e vh (largura e altura da tela), em (tamanho relativo a fonte do elemento),
+      */
+    width: 10p;
+    height: 100%;
+}
+
+#box img {
+    width: 100%;
+}
+
+#paragrafos {
+    font-size: 10px; /* <-- em = 10px */
+}
+
+p {
+    font-size: 1em;
+}
+
+#dobro {
+    font-size: 2em;
+}
+
+#triplo {
+    font-size: 3rem;
+}
+
+#caixinha {
+    display: inline-block;
+    background-color: pink;
+    padding: 1em;
+}
