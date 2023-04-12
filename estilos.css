@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap');
+
+body{
+    background-color: #faedcd;
+    font-family: Arial;
+}
+
+h1{
+    color: #bc6c25;
+    font-family: "Pacifico";
+}
+
+h2{
+    color:#bc6c25;
+    font-family: "Pacifico";
+    font-weight: 500;
+}
+
+h3{
+    color:#bc6c25;
+    font-family: "Anton";
+    font-weight: 100;
+}
+
+.menu {
+    
+    color: #283618;
+    font-weight: 700;
+    background-color: #e9edc9;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu:hover {
+    color: #faedcd;
+    background-color: #283618;
+    
+}
+
+#primeiroP, #ref, #linhatitulo {
+    color: #bc6c25;
+    font-weight: bold;
+    text-align: center;
+}
+
+#pudim {
+    border: solid;
+    border-radius: 10px;
+}
+
+tr.par {
+    background-color: #ccd5ae;
+}
+
+.itemtitulo {
+    padding: 10px;
+}
+
+.item {
+    padding: 5px;
+}
+
+tr.impar {
+    background-color: #e9edc9;
+}
+
+table {
+    background-color: #bc6c25;
+    padding: 5px;
+}
+
+ul li.impar {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+

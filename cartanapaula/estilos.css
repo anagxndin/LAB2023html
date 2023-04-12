@@ -1,0 +1,46 @@
+body{
+    background-color: #FBC4AB;
+    font-family: monospace;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.carta {
+    border: 10px solid #F08080; 
+    /*border-left: 3px dashed green;*/
+
+    margin: 20px;
+
+    padding: 30px;
+
+    background-image: url(brabuleta.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.topo {
+    border: 3px solid #F08080;
+    text-align: center;
+    background-color: #F4978E;
+}
+
+.descrição, .foto {
+    border: 3px solid #F08080;
+    padding: 10px;
+    text-align: justify;
+    background-color: #FFDAB9;
+}
+
+#anapaula {
+    width: 280px;
+    border-radius: 25px;
+}
+
+#fotoana {
+    text-align: center;
+}
+
+.estrelamateria {
+    width: 14px;
+}
