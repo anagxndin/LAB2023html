@@ -1,0 +1,99 @@
+body {
+    background-color: #1D3557;
+    text-align: center;
+}
+
+#site {
+
+    width: 1000px;
+    margin: 0;
+
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+   
+    /* grid-template-columns: 100px 300px; */
+
+    grid-template-areas: 
+
+        'topo topo topo'
+        'video video sugeridos'
+        'video video sugeridos'
+        'video video sugeridos';
+
+}
+
+#topo {
+
+    background-color: #E63946;
+    height: 9vh;
+    grid-area: topo;
+
+}
+
+#video {
+
+    background-color: #F1FAEE;
+    grid-area: video;
+    width: 75vw;
+    padding: 3%;
+    
+   
+
+
+}
+
+#video div {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 70vw;
+}
+
+#conteudo {
+
+    background-color: #E63946;
+    height: 50vh;
+    
+    
+    
+}
+
+#titulo {
+    text-align: left;
+    padding: 1%;
+    height: 7vh;
+    background-color: beige;
+
+}
+
+#canal {
+    background-color: aquamarine;
+    text-align: left;
+    display: flex;
+
+}
+
+#descricao {
+
+    background-color: #457b9d
+
+}
+
+#foto {
+    border-radius: 100%;
+    background-color: #1D3557;
+    width: 10vw;
+}
+
+#comentarios {
+
+    background-color: #83c5be;
+
+}
+
+#sugeridos {
+
+    background-color: #A8DADC;
+    grid-area: sugeridos;
+    width: 25VW;
+
+}
