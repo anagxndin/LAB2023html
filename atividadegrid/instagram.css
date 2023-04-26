@@ -1,0 +1,104 @@
+body {
+    background-color: transparent;
+}
+
+#site {
+    background-color: black;
+    width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rowtopo {
+    text-align: center;
+    background-color:  #cdb4db;
+    font-size: small;
+    font-weight: 600;
+}
+
+#rowPerfil {
+    background-color: #ec91d8;
+    padding: 10px;
+}
+
+#icon {
+    border-radius: 100%;
+    width: 60px;
+
+}
+
+#iconEuser {
+    display: flex;
+}
+
+#username {
+    margin-left: 12px;
+    font-weight: 100;
+}
+
+#rowDestaques {
+    background-color:  #ffaaea;
+    padding-bottom: 15px;
+    display: flex;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.itemDestaques {
+    border-radius: 100%;
+    width: 44px;
+    display: block;
+    margin: 5px;
+    
+}
+
+#rowNumeros {
+    background-color:  #ffbeef;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: smaller;
+}
+
+.dadosNumeros {
+    margin: 10px;
+}
+
+#rowIcones {
+    background-color: #ffd3da;
+    font-size: smaller;
+    text-align: center;
+}
+
+.paddingpadrao {
+    padding: 7px;
+}
+
+#rowGaleria {
+    text-align: center;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0%;
+    
+}
+
+.itemGaleria {
+    width: 148px;
+    margin: 1px;
+    background-color: black;
+}
+
+.itemGaleria:hover, .itemDestaques:hover {
+
+    opacity: 50%;
+    
+}
+
+#rowMenu {
+    text-align: center;
+    background-color: #e9d3d0;
+    font-size: smaller;
+}
+
