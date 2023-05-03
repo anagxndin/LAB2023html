@@ -1,0 +1,59 @@
+* {
+    /* '*' = todos os elementos */
+    margin: 0;
+    padding: 0;
+    /* box-sizing: content-box;  */
+    /* contentbox leva em consideração apenas o tamanho do conteúdo, não considera paddings */
+    box-sizing: border-box;
+
+}
+
+/* GRID layouts -> limitado a colunas e linhas definidas */
+/* FLEX -> flexibilidade em diferentes tamanhos de tela, formatos */
+
+body {
+    background-color: goldenrod;
+}
+
+.container {
+    background-color: firebrick;
+    width: 90%;
+    height: 50vh;
+    margin: 25vh auto;
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.item {
+    background-color: palevioletred;
+    margin: 0.5em;
+}
+
+.um {
+    /* PADRÃO = flex 0 (não cresce)*/
+    /* crescer no 'espaço restante' */
+    flex-grow: 0;
+    /* flex-shrink: ; (não funciona sozinho, precisa do flex basis) */
+    flex-shrink: 0;
+    flex-basis: 200px;
+    /* tamanho base é 200px mas encolhe caso preciso */
+    /* align-self: flex-end; */
+}
+
+.dois {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    /* se passar de 300px, ele cresce, mas não é possível encolher */
+    /* align-self: center; */
+}
+
+.tres {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    /* align-self: flex-start; */
+}
