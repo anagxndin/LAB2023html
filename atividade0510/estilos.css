@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    width: 80%;
+
+}
+
+#linha1 {
+
+    display: flex;
+
+}
+
+#linha2 {
+    
+    background-color: #CAF0F8;
+    justify-content: center;
+
+}
+
+#linha3 {
+
+    display: flex;
+
+}
+
+#topo1 {
+    background-color: #1e206c;
+    flex-basis: 50px;
+    height: 50px;
+}
+
+#topo2 {
+    background-color: #023E8A;
+    flex-grow: 1;
+}
+
+#topo3 {
+    background-color: #0077B6;
+    flex-basis: 50px;
+}
+
+#menu1 {
+    background-color: #0096C7;
+}
+
+#menu2 {
+    background-color: #00B4D8;
+}
+
+#menu3 {
+    background-color: #48CAE4;
+}
+
+#menu4 {
+    background-color: #90E0EF;
+}
+
+#menu5 {
+    background-color: #ADE8F4;
+}
+
+.menu {
+    height: 60px;
+}
