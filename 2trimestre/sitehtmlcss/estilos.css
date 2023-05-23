@@ -1,11 +1,49 @@
 * {
+    width: 100%;
+    margin: 0%;
+}
 
+a {
+    text-decoration: none;
 }
 
 #bodyinicial {
     background-color: black;
+    display: grid;
+    height: 70vh;
+    width: 1000px;
+    grid-template-columns: 20% 80%;
+}
+
+#menu {
+    background-color: #DD2D4A;
+   
+}
+
+#homeContent {
+    
+   
+}
+
+.itemMenu {
+    background-color: #F5A7BC;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    width: 110px;
 }
 
 #logorosa {
     width: 250px;
+}
+
+#bpHome {
+    
+}
+
+#homeTitle {
+    background-color: #F5A7BC;
+    padding: 2em;
 }
