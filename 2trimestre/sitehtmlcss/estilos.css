@@ -239,21 +239,25 @@ a {
     
 }
 
+.bodyInteg {
+    background-color: #9B60A7;
+}
+
 .PageInteg {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bioInteg {
-    margin: 50px;
+    margin: 30px;
     width: 40vw;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-self: center;
-    font-size: larger;
+    font-size: large;
 }
 
 .bioTitles {
@@ -261,7 +265,7 @@ a {
 }
 
 .conteudoBio {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: justify;
 }
 
@@ -326,25 +330,25 @@ a {
 #galleryJennie {
     background-color: #9B60A7;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 #menuJennie {
     display: grid;
-    grid-template-rows: auto auto auto;
-    justify-content:left;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
 }
 
 .itemMenuJennie {
     font-size: x-large;
     font-weight: bolder;
-    opacity: 70%;
     color: black;
-    background-color: #9B60A7;
-    width: 14vw;
+    background-color: aliceblue;
+    width: 12vw;
     text-align: center;
-    padding: 15px;
-    margin: 5px;
+    padding: 10px;
+    margin: 3px;
     border: solid 10px black;
     
 }
@@ -358,11 +362,13 @@ a {
 
     display: grid;
     grid-template-columns: auto auto auto auto;
+    text-align: center;
 
 }
 
 .itemMenuJennie:hover {
-    opacity: 100%;
+    background-color: #420b14;
+    color: aliceblue;
 }
 
 #thumbRose {
@@ -371,19 +377,18 @@ a {
 
 }
 
-.buttonInteg {
-    
-    background-color: black;
-    color: beige;
-    font-size: larger;
-    width: 100%;
-    height: 100vh;
-    margin: 0%;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
+.botaovoltar {
+    background-color: #9B60A7;
     text-align: center;
     
+
+}
+
+.buttonInteg {
+    color: black;
+    background-color: aliceblue;
+    border: solid 10px black;
+
 }
 
 #thumbJisoo {
@@ -398,11 +403,12 @@ a {
 /* --------------------- MODA MINIGANE ------------------------ */
 
 #bodyminigame {
-    background-color: #DD2D4A;
-    background-image: linear-gradient(to top, #DD2D4A, black 40%);
+    background-color: black;
+    /* background-image: linear-gradient(to top, #DD2D4A, black 40%); */
     background-size: cover;
     background-repeat: no-repeat;
     color: #F5A7BC;
+   
 }
 
 .typing-animation {
@@ -423,8 +429,8 @@ a {
     text-align: left;
     overflow: hidden;
     white-space: no-wrap;
-    animation: typing 10s steps(100, start);
-    border-right: .15em solid white;
+    animation: typing 7s steps(100, start);
+    border-right: .15em solid black;
     width: 0;
     animation-fill-mode: forwards;
   }
@@ -447,7 +453,7 @@ a {
 
 #minigameThumb {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 32% 68%;
 }
 
 #choose {
@@ -476,33 +482,80 @@ a {
     to { width: 100%; }
 }
 
+#celinediv {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:  
+    'revista1 logo revista2'
+    'revista1 logo2 revista2'
+    ;
+    text-align: center;
+    align-items: center;
+}
+
+.revista1 {
+    grid-area: revista1;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo2 {
+    grid-area: logo2;
+}
+
+
+.revista2 {
+    grid-area: revista2;
+}
+
+.celine {
+    width: 300px;
+}
+
+#modaContent {
+    padding: 40px;
+    background-color: black;
+    width: 90vw;
+}
+
+.modaTopic {
+    margin-bottom: 80px;
+}
+
 /* --------------------- capetalismo ------------------------ */
 
 #bodylojinha {
     background-color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 #titleloja {
     text-align: center;
     color: #DD2D4A;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
 }
 
 .menuloja {
     font-size: smaller;
 }
 
-.produtoloja {
+.produtos img {
     width: 25vw;
+
+
 }
 
 .produtos {
     display: grid;
     grid-template-columns: auto auto auto;
-    align-self: center;
+    background-color: #9B60A7;
+    text-align: center;
 }
 
 .produtoloja:hover {
@@ -512,8 +565,148 @@ a {
 #conteudoLoja {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 }
+
+/* --------------------- ALBUNS ------------------------ */
+
+#bodyalbuns {
+    background-color: #DD2D4A;
+    text-align: center;
+}
+
+.menualbuns div {
+    background-color: black;
+    font-size: smaller;
+}
+
+
+#titlealbuns {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+    text-align: left;
+    margin-left: 70px;
+
+
+}
+
+#galeriaalbuns img {
+    width: 230px;
+}
+
+
+/* --------------------- FAVORITOS ------------------------ */
+
+#bodyfavoritos {
+    /* background-image: url(imagensbp/newspaper.jfif); */
+    background-color: #F5A7BC;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+}
+
+#coachella2 {
+}
+
+.coachimg {
+    width: 600px;
+    margin: 10px;
+}
+
+#coachella {
+    background-image: url(imagensbp/coachellafav.jpg);
+    background-size: cover;
+}
+
+.titlefav {
+    color: #420b14;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 5em;
+    text-align: left;
+    padding-left: 50px;
+    background-color: #F5A7BC;
+    
+
+}
+
+.cannes {
+    width: 230px;
+    margin: 20px;
+}
+
+.pages div {
+    /* background-color: #F5A7BC; */
+    background-image: url(imagensbp/newspaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.FAV {
+    width: 103vw;
+}
+
+.menufav {
+    width:fit-content;
+    display: flex;
+    text-align: center;
+}
+
+.menufav div {
+    
+}
+
+
+
+/* --------------------- CONTATO ------------------------ */
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #F5A7BC;
+    
+}
+
+.row h1, h2, h3 {
+    font-family: monospace;
+    font-size: 2em;
+   
+}
+
+.row h1 {
+    color: #DD2D4A;
+    font-size: 5em;
+}
+
+#textcontato {
+    padding: 10px;
+    margin: 10px;
+    width: 50vw;
+}
+
+#mensagem {
+    height: 10vh;
+}
+
+#textcontato input {
+    width: 300px;
+    display: flex;
+}
+
+#textcontato button {
+    width: 100px;
+    margin-top: 20px;
+    background-color: #DD2D4A;
+}
+
+
 
 
 
