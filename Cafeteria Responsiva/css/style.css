@@ -164,3 +164,128 @@ section {
     padding: 1rem 0;
     line-height: 2;
 }
+
+/* about/sobre */
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    /* se não couber, quebra a linha */
+    align-items: center;
+    /* alinha verticalmente */
+    gap: 4rem;
+}
+
+.about .image {
+    flex-grow: 1;
+    /* aumenta se for preciso */
+    flex-shrink: 1;
+    /* diminui se for preciso */
+    flex-basis: 40rem; 
+    /* tamanho padrao */
+}
+
+.about .image img {
+    width: 100%;
+}
+
+.about .content {
+    flex: 1 1 40rem; 
+    /* grow shrink basis */
+}
+
+.about .content h3 {
+    font-family: 'Merienda One', cursive;
+    font-size: 4.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.about .content p {
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* facility/nossas instalações */
+.facility .box-container {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    /* repeat(numero de vezes, o que quer repetir) */
+    grid-template-columns: repeat(4,auto);
+    gap: 1.5rem;
+    
+}
+
+.facility .box-container .box {
+    text-align: center;
+}
+
+.facility .box-container .box img {
+    height: 10rem;
+    margin-bottom: 0.5rem;
+}
+
+.facility .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+
+.facility .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 1;
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+    
+}
+
+.menu .box-container .box {
+    text-align: center;
+}
+
+.menu .box-container .box h3 {
+    font-size: 2rem;
+    color: #333333;
+}
+
+.menu .box-container .box img{
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.gallery .box-container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 1.5rem;
+}
+
+.gallery .box-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* preenche o elemento */
+   
+}
+
+.team .box-container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.team .box-container img{
+    width: 100%;
+}
+
+.team .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
