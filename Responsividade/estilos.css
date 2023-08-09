@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+* {
+    background-color: antiquewhite;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ---------- TOPO ---------- */
+.navbar {
+    text-align: center;
+}
+/* ---------- HOME ---------- */
+.BOTAO {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.contentTexto {
+    width: 25rem;
+}
+
+.content {
+    display: flex;
+}
+
+.imghome {
+    width: 22rem;
+}
+
+/* ---------- WELCOME ---------- */
+
+.WELCOME .cards img {
+    width: 10rem;
+}
+
+.WELCOME .caixacards {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 1rem;
+
+ 
+}
+
+
+/* ---------- ACTIVITIES ---------- */
+.ACTIVITIES .cards img {
+    width: 15rem;
+}
+
+.ACTIVITIES .caixacards {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 1rem;
+}
+
+
+/* ---------- COMMUNITY ---------- */
+/* ---------- DIY ---------- */
+
+
+.DIY .cards img {
+    width: 15rem;
+}
+
+.DIY .caixacards {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 1rem;
+
+ 
+}
+
+
+/* ---------- NEWSLETTER ---------- */
+/* ---------- LOGO ---------- */
