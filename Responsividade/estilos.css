@@ -23,9 +23,9 @@ section {
 /* ---------- TOPO ---------- */
 .navbar {
     text-align: center;
-    background-color: #9d9d9f;
     padding: 1rem;
     gap: 1rem;
+   
 
 }
 
@@ -34,13 +34,13 @@ section {
 }
 
 .header {
-    display: flex;
+    
     flex-direction: row;
     position: sticky; 
     top: 0;
     left: 0;
     right: 0;
-    height: 3rem;
+   
 }
 
 
@@ -48,8 +48,9 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1rem;
     position: relative;
+    background-color: #9d9d9f;
 }
 
 .header .flex .logo img {
@@ -62,8 +63,12 @@ section {
     margin-left: 2rem;
 }
 
-#menu-btn {
-    display: none;
+ 
+
+.icones i {
+    margin-left: 1rem;
+    gap: 1rem;
+     
 }
  
 /* ---------- HOME ---------- */
@@ -207,4 +212,11 @@ section {
         width: 9rem;
         font-size: 0.7rem;
     }
+    .navbar {
+        display: none;
+    }
+    .icones .sumir {
+        display: none;
+    }
+   
 }
