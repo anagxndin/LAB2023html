@@ -3,16 +3,69 @@
 
 
 * {
-    background-color: antiquewhite;
+ 
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #4a4a4c;
+}
+
+section {
+    background-color: #ffff;
+    padding: 3rem 2rem;
+    /* sentido vertical/horizontal */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
 /* ---------- TOPO ---------- */
 .navbar {
     text-align: center;
+    background-color: #9d9d9f;
+    padding: 1rem;
+    gap: 1rem;
+
 }
+
+.navbar .menulogo {
+    text-align: left;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    position: sticky; 
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+}
+
+
+.header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+.header .flex .logo img {
+    height: 4.5rem;
+}
+
+.header .flex .navbar a {
+    font-size: 1rem;
+    color: var(--black);
+    margin-left: 2rem;
+}
+
+#menu-btn {
+    display: none;
+}
+ 
 /* ---------- HOME ---------- */
 .BOTAO {
     background-color: black;
@@ -27,53 +80,131 @@
     display: flex;
 }
 
-.imghome {
-    width: 22rem;
+.heading, .subtexto {
+    margin-bottom: 1rem;
 }
+
+
+.imghome {
+    width: 50%;
+    margin-left: 1rem;
+}
+
+.HOME, .COMMUNITY {
+    margin: 0;
+    padding: 0;
+}
+
+.HOME .content {
+    padding: 2rem;
+    background-image: url(imagens/babyorca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
 
 /* ---------- WELCOME ---------- */
 
-.WELCOME .cards img {
-    width: 10rem;
+.cards img {
+    width: 100%;
 }
 
-.WELCOME .caixacards {
+.caixacards {
     display: grid;
     grid-template-columns: repeat(4,auto);
     gap: 1rem;
 
- 
+}
+
+.WELCOME {
+    text-align: center;
+}
+
+
+.caixacards img {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20rem;
+
 }
 
 
 /* ---------- ACTIVITIES ---------- */
-.ACTIVITIES .cards img {
-    width: 15rem;
+/* .ACTIVITIES .cards img {
+
+} */
+
+.ACTIVITIES {
+    text-align: center;
+}
+
+.ACTIVITIES .heading, .ACTIVITIES .subtexto {
+    text-align: left;
 }
 
 .ACTIVITIES .caixacards {
     display: grid;
     grid-template-columns: repeat(4,auto);
     gap: 1rem;
+    
+}
+
+.BOTAO {
+    margin-top: 1rem;
 }
 
 
 /* ---------- COMMUNITY ---------- */
+
+.COMMUNITY .content {
+    background-image: url(imagens/orcahome.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem;
+}
 /* ---------- DIY ---------- */
 
 
-.DIY .cards img {
-    width: 15rem;
+.DIY  {
+    text-align: center;
+}
+
+.DIY .heading, .DIY .subtexto {
+    text-align: left;
 }
 
 .DIY .caixacards {
     display: grid;
     grid-template-columns: repeat(4,auto);
     gap: 1rem;
-
  
 }
 
 
 /* ---------- NEWSLETTER ---------- */
 /* ---------- LOGO ---------- */
+
+/* RESPONSIVIDADE EM SMARTPHONES  */
+@media (max-width: 450px) {
+
+
+    h1, h2 {
+        font-size: 1rem;
+    }
+    h4, h5, h3, .BOTAO {
+        font-size: 0.6rem;
+    }
+
+    .DIY .caixacards, .caixacards, .ACTIVITIES .caixacards {
+        grid-template-columns: auto auto;
+    }
+
+    .caixacards img {
+        width: 80%;
+    }
+
+    .COMMUNITY .subtexto {
+        width: 9rem;
+        font-size: 0.7rem;
+    }
+}
